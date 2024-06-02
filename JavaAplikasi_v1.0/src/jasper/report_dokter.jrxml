@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_dokter" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="872953cb-27a0-4223-80d9-49d730af3982">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from dokter]]>
+	</queryString>
+	<field name="id_dokter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_dokter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bidang_dokter" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruang_praktik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jadwal_praktik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam_praktik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="21" width="294" height="58" uuid="7b92a0be-0043-4bce-9875-1cc7047fe977"/>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA DOKTER YANG SEDANG BERTUGAS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="488" y="50" width="222" height="0" uuid="65466675-9b41-4ae1-a63c-295c24d4453f"/>
+				<imageExpression><![CDATA["C:\\Users\\HP\\Downloads\\Desain tanpa judul(3).jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="423" y="13" width="119" height="66" uuid="853e603a-6f3a-4cf0-8e88-a5576c7aeb5f"/>
+				<imageExpression><![CDATA["C:\\Users\\HP\\Downloads\\Desain tanpa judul(3).jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="58" y="21" width="71" height="48" uuid="33e2cea6-f198-492e-98e1-1c99783262f8"/>
+				<imageExpression><![CDATA["C:\\Users\\HP\\Downloads\\Desain tanpa judul(2).jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="41" width="76" height="20" uuid="53cbc877-e3e6-41ce-8e7f-912e49ac7f9e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[id_dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="41" width="100" height="20" uuid="e0e8febe-c447-4995-8363-4337092178e0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[nama_dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="41" width="100" height="20" uuid="5b4057a5-7998-4fb8-b02a-f45b4c60b468"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[bidang_dokter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="41" width="100" height="20" uuid="a0971b3a-d703-40a4-9a64-5954312e4f40"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[ruang_praktik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="41" width="100" height="20" uuid="240a9da8-b127-4d68-9840-b82f877ff64e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[jadwal_praktik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="41" width="76" height="20" uuid="6f5d33e2-4ed5-4423-91b2-6012316abc13"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<text><![CDATA[jam_praktik]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="76" height="20" uuid="394e5176-1a06-41c0-8896-494124bbef56"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="78" y="0" width="100" height="20" uuid="0e26d127-e5d9-4704-bb0a-0a4c19c83747"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="100" height="20" uuid="b90a1fa1-a985-402a-91bc-79dfe194c7ef"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bidang_dokter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="0" width="100" height="20" uuid="aa92bada-8591-456e-8571-321e4d75f439"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ruang_praktik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="0" width="100" height="20" uuid="d1259fb2-262a-43b1-a95a-88a0aa7bf5e5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jadwal_praktik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="478" y="0" width="76" height="20" uuid="5f2af8a3-c647-49e8-9697-e1d6977203e5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Palatino Linotype" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jam_praktik}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
